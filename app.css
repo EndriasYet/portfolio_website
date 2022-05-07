@@ -4,14 +4,15 @@
     
     body {
         width: 100vw;
-        height: 300vw;
+        height: 100vh;
     }
     
     .topnav {
         position: sticky;
         top: 0%;
-        height: 3%;
-        width: 100vw !important;
+        font-size: 2.2vh;
+        height: 15%;
+        width: 100% !important;
         z-index: 1;
     }
     
@@ -71,7 +72,8 @@
     }
     
     .intro {
-        height: calc(90vh - 10vw) !important;
+        height: 75% !important;
+        font-size: 2.2vh;
         display: flex;
         background-color: black;
         background-image: url("backg.jpg");
@@ -117,13 +119,13 @@
     .welc_text:hover {
         transition: all 0.5s ease;
         color: #FFB703;
-        font-size: 200%;
+        font-size: 2.1em;
     }
     
     #findmore_button:hover {
-        border: 3px solid #eb3471;
+        border: 3px solid #0c0c0c;
         transition: all 0.2s ease;
-        color: #9381ff;
+        color: white;
         background-color: #103242;
         font-size: 1.6em;
     }
@@ -133,7 +135,8 @@
         flex-direction: row;
         position: relative;
         flex-direction: row;
-        height: 60vw;
+        height: 110%;
+        font-size: 2.2vh;
         background-color: #D7E3FC;
     }
     
@@ -236,15 +239,16 @@
         background-image: url("Picture11.jpg");
         background-repeat: no-repeat;
         z-index: 1;
+        height: 150%;
         background-size: cover;
         object-fit: cover;
     }
     
     .row2 {
         border: 2px solid black;
-        padding: 3em 0;
-        height: calc(180vh - 20vw) !important;
-        padding-top: 4%;
+        height: 95% !important;
+        font-size: 2.15vh;
+        padding-top: 3.4%;
         opacity: 0.98;
         background-color: #eaeffc;
         color: #001d59;
@@ -396,13 +400,14 @@
         opacity: 1;
         background-repeat: no-repeat;
         overflow: hidden;
-        height: calc(350vh - 45vmax) !important;
+        height: 200% !important;
         background-repeat: repeat-x;
         background-size: cover;
     }
     
     .row3 {
         height: 100%;
+        font-size: 1.8vh;
         border: 2px solid black;
         border-top: 0px solid #f7f5fb;
         padding: 3em 0;
@@ -480,12 +485,13 @@
         border: 7px solid black;
         transition: all 0.2s ease;
         color: black;
-        background-color: rgb(202, 122, 122);
+        background-color: rgb(159, 159, 159);
         font-size: 1.4em;
     }
     
     .psuedo4 {
         border: 5px solid black;
+        height: 135% !important;
         background-image: url("Picture4.jpg");
         background-repeat: no-repeat;
         z-index: 0;
@@ -495,8 +501,8 @@
     
     .row4 {
         border: 5px solid auto;
+        font-size: 1.8vh;
         padding: 5em 0;
-        height: calc(220vh - 30vmax) !important;
         background-color: #769edb;
         opacity: 0.95;
         color: #291803;
@@ -578,11 +584,13 @@
         background-image: url("dogos.jpg");
         background-size: cover;
         background-repeat: repeat-y;
+        height: 120%;
         /* opacity: 1; */
     }
     
     .emailform {
-        height: calc(135vh - 3vw) !important;
+        height: 100%;
+        font-size: 2vh;
         margin-top: 0px;
         display: flex;
         flex-wrap: wrap;
@@ -650,20 +658,30 @@
     
     .bottomnav {
         position: sticky;
-        height: calc(75vh - 15vw) !important;
+        height: 50% !important;
         top: 100%;
         z-index: 1;
     }
     
     .footercontainer {
         background-color: #ffffff;
-        font-size: 1.1em;
+        font-size: 2.4vh;
         width: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
         color: #001824;
         font-family: 'Times New Roman', Times, serif
+    }
+    
+    .bottommenu {
+        width: 50% !important;
+    }
+    
+    #button_bot {
+        font-size: 1.4em !important;
+        padding: 1em 1em;
+        text-decoration: none;
     }
     
     .footer1 {
@@ -729,9 +747,15 @@
     
     .bottomnavbar_container {
         background-color: inherit !important;
+        padding-bottom: 2%;
     }
     
     #button_bot,
     #foottitle2 {
         color: inherit;
+    }
+    
+    #button_bot:hover {
+        transition: all 0.3s ease !important;
+        font-size: 180% !important;
     }
