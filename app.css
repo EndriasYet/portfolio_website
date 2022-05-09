@@ -49,7 +49,7 @@
         scroll-behavior: smooth;
     }
     
-    s .logo_container {
+    .logo_container {
         /* border: 1px solid white; */
         display: flex;
         left: 0px;
