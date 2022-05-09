@@ -47,3 +47,26 @@ for (btn of buttons) {
     }
 
 }
+const mediaQuery = window.matchMedia('(max-width: 1000px)')
+
+function checkMedia(e) {
+    if (e.matches) {
+        document.querySelector("#hum2").addEventListener("click", function() {
+            let disp = document.querySelector(".menu");
+            let cont = document.querySelector(".topnav");
+            if (disp.style.display == 'flex') {
+                disp.style.display = 'none';
+                cont.style.height = '10%';
+            } else {
+                cont.style.height = '350%';
+                disp.style.display = 'flex';
+            }
+        }, false);
+
+    }
+}
+
+mediaQuery.addListener(checkMedia)
+
+// Initial check
+checkMedia(mediaQuery)
