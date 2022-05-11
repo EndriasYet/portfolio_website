@@ -3,7 +3,7 @@
     }
     
     body {
-        width: 100vw;
+        width: 100vw !important;
         height: 100vh;
     }
     
@@ -80,6 +80,7 @@
     }
     
     .intro {
+        border: 5px solid black;
         height: 75% !important;
         font-size: 2.2vh;
         display: flex;
@@ -88,6 +89,7 @@
         background-size: cover;
         border: 5px solid auto;
         justify-content: center;
+        align-items: center;
     }
     
     .welcome {
@@ -139,6 +141,7 @@
     }
     
     .row1 {
+        border: 2px solid black;
         display: flex;
         flex-direction: row;
         position: relative;
@@ -149,7 +152,7 @@
     }
     
     .row1_col1 {
-        /* border: 8px solid red; */
+        border-right: 4px solid black;
         position: relative;
         display: flex;
         flex-wrap: wrap;
@@ -499,33 +502,34 @@
     
     .psuedo4 {
         border: 5px solid black;
-        height: 135% !important;
+        height: 145%;
         background-image: url("Picture4.jpg");
         background-repeat: no-repeat;
         z-index: 0;
         opacity: 1;
-        background-size: cover;
+        background-size: contain;
     }
     
     .row4 {
+        position: relative;
         border: 5px solid auto;
+        background-color: #abc4ff;
+        height: 100%;
         font-size: 1.8vh;
-        padding: 5em 0;
-        background-color: #769edb;
         opacity: 0.95;
         color: #291803;
         font-family: 'Bebas Neue', cursive;
+        margin-top: -3.3%;
     }
     
     .row4top {
         align-items: center;
-        margin-bottom: -7%;
-        margin-top: -2%;
     }
     
     #title4 {
         font-size: 3.8em;
         text-align: center;
+        padding-top: 5%;
         color: inherit;
     }
     
@@ -571,7 +575,6 @@
         font-size: 1.5em;
         margin-right: 20%;
         margin-top: 18%;
-        margin-bottom: 0%;
     }
     
     #title41 {
@@ -593,17 +596,18 @@
         background-size: cover;
         background-repeat: repeat-y;
         height: 120%;
+        width: 100%;
         /* opacity: 1; */
     }
     
     .emailform {
+        position: relative;
         height: 100%;
+        width: 100%;
         font-size: 2vh;
-        margin-top: 0px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        height: 120vh;
         background-color: #023047;
         opacity: 0.85;
         font-family: 'Graduate', cursive;
@@ -622,10 +626,11 @@
     
     .formcontainer {
         display: flex;
+        flex-wrap: wrap;
         background-color: rgb(0, 0, 0);
         border: 40px solid black;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         font-size: 2em;
     }
     
@@ -707,7 +712,7 @@
     }
     
     .footer2 {
-        width: 60%;
+        width: 100%;
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -753,7 +758,7 @@
     
     #foottitle2 {
         font-size: 1.8em;
-        margin-bottom: 0em;
+        text-align: center;
     }
     
     #foottitle2:hover {
@@ -768,6 +773,7 @@
     #button_bot,
     #foottitle2 {
         color: inherit;
+        align-self: center;
     }
     
     #button_bot:hover {
