@@ -1,13 +1,12 @@
 @media (max-width: 1000px) {
     .html {
-        height: 100vh;
-        width: 100vw;
+        scroll-behavior: smooth;
+        border: 2px solid black;
     }
     body {
         /* display: block; */
-        width: 100vw !important;
+        width: 98vw !important;
         height: 100vh !important;
-        overflow-y: none;
         overflow-x: hidden !important;
     }
     .topnav {

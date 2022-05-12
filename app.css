@@ -5,6 +5,7 @@
     body {
         width: 100vw !important;
         height: 100vh;
+        overflow-x: hidden !important;
     }
     
     .topnav {
